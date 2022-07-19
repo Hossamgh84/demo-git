@@ -8,6 +8,9 @@ Si vous trouvez ça trop facile, passez par une fonction récursive
 import fonction
 
 def fibo(nombre):
+    """
+    function de calcul fibonacci
+    """
     elem_fibonacci=[0,1]
     for i in range(2,nombre):
         elem_fibonacci.insert(i,elem_fibonacci[i-1]+elem_fibonacci[i-2])
