@@ -5,7 +5,22 @@ Si vous trouvez ça trop facile, passez par une fonction récursive
 ( c'est à dire fonction qui s'appelle elle meme)
 """
 
-import fonction
+def input_int(message:str)->int:
+    carac = input(message)
+    try:
+        nb = int(carac)
+    except ValueError as Ve:
+        print("entrer un ENTIER !")
+        print(Ve)
+        nb = input_int(message)
+    return nb
+    
+def input_int_positif(msg:str)->int:
+    nbPos = input_int(msg)
+    if nbPos < 0:
+        print("entrer un POSITIF !")
+        nbPos = input_int_positif(msg)
+    return nbPos
 
 def fibo(nombre):
     """
@@ -18,7 +33,8 @@ def fibo(nombre):
 
 nombreSerie=0
 while nombreSerie<=1:
-    msg="Entrer un entier positif plus que 1 correspondant à nombre d'elements souhaités de la serie Fibonacci"
-    nombreSerie=fonction.input_int_positif(msg)
+    msg="Entrer un entier positif plus que 1 correspondant à nombre \
+        d'elements souhaités de la serie Fibonacci"
+    nombreSerie=input_int_positif(msg)
 
 fibo(nombreSerie)
