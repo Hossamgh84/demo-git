@@ -17,7 +17,7 @@ def input_int(message:str)->int:
         print(value_err)
         nombre = input_int(message)
     return nombre
-    
+
 def input_int_positif(message:str)->int:
     """
     function pour entrer integer positif
@@ -37,10 +37,10 @@ def fibonacci(nombre):
         elem_fibonacci.insert(i,elem_fibonacci[i-1]+elem_fibonacci[i-2])
     print(elem_fibonacci)
 
-nombre_Serie=0
-while nombre_Serie<=1:
-    message_Call="Entrer un entier positif plus que 1 correspondant à nombre \
+NOMBRE=0
+while NOMBRE<=1:
+    MESSAGE="Entrer un entier positif plus que 1 correspondant à nombre \
         d'elements souhaités de la serie Fibonacci"
-    nombre_Serie=input_int_positif(message_Call)
+    NOMBRE=input_int_positif(MESSAGE)
 
-fibonacci(nombre_Serie)
+fibonacci(NOMBRE)
