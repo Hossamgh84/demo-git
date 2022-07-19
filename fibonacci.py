@@ -37,10 +37,10 @@ def fibonacci(nombre):
         elem_fibonacci.insert(i,elem_fibonacci[i-1]+elem_fibonacci[i-2])
     print(elem_fibonacci)
 
-nombre_serie=0
-while nombre_serie<=1:
-    message_call="Entrer un entier positif plus que 1 correspondant à nombre \
+nombre_Serie=0
+while nombre_Serie<=1:
+    message_Call="Entrer un entier positif plus que 1 correspondant à nombre \
         d'elements souhaités de la serie Fibonacci"
-    nombre_serie=input_int_positif(message_call)
+    nombre_Serie=input_int_positif(message_Call)
 
-fibonacci(nombre_serie)
+fibonacci(nombre_Serie)
