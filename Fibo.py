@@ -12,9 +12,9 @@ def input_int(message:str)->int:
     carac = input(message)
     try:
         nombre = int(carac)
-    except ValueError as value_Err:
+    except ValueError as value_err:
         print("entrer un ENTIER !")
-        print(value_Err)
+        print(value_err)
         nombre = input_int(message)
     return nombre
     
@@ -22,13 +22,13 @@ def input_int_positif(message:str)->int:
     """
     function pour entrer integer positif
     """
-    nombre_Pos = input_int(message)
-    if nombre_Pos < 0:
+    nombre_pos = input_int(message)
+    if nombre_pos < 0:
         print("entrer un POSITIF !")
-        nombre_Pos = input_int_positif(message)
-    return nombre_Pos
+        nombre_pos = input_int_positif(message)
+    return nombre_pos
 
-def fibo(nombre):
+def fibonacci(nombre):
     """
     function de calcul fibonacci
     """
@@ -43,4 +43,4 @@ while nombreSerie<=1:
         d'elements souhaités de la serie Fibonacci"
     nombreSerie=input_int_positif(message_1)
 
-fibo(nombreSerie)
+fibonacci(nombreSerie)
