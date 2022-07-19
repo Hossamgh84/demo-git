@@ -1,11 +1,8 @@
 """
-
 Ecrire l'algorithme qui permet de vérifier si un triangle est rectangle
-
 Rappel un triangle est rectangle si il respecte le triplet pythagoricien a²+b²=c²
-
-
 """
+
 arr = []
 
 # Tant que l'utilisateur n'a pas rentrer 3 chiffres il recommence
